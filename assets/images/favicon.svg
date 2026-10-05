@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="gourmetGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4EEE5"/>
+      <stop offset="35%" stop-color="#DBA868"/>
+      <stop offset="70%" stop-color="#C99A5B"/>
+      <stop offset="100%" stop-color="#B86F45"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2A211D"/>
+      <stop offset="100%" stop-color="#171311"/>
+    </radialGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#bgGlow)" stroke="url(#gourmetGold)" stroke-width="2"/>
+  <circle cx="32" cy="32" r="26" fill="none" stroke="url(#gourmetGold)" stroke-width="0.8" stroke-dasharray="2 2"/>
+  <path d="M 32 18 L 32 48" stroke="url(#gourmetGold)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 32 20 C 26 17, 22 21, 25 25 C 28 24, 30 22, 32 20 Z" fill="url(#gourmetGold)"/>
+  <path d="M 32 20 C 38 17, 42 21, 39 25 C 36 24, 34 22, 32 20 Z" fill="url(#gourmetGold)"/>
+  <path d="M 32 26 C 25 24, 21 28, 24 32 C 27 31, 30 29, 32 26 Z" fill="url(#gourmetGold)"/>
+  <path d="M 32 26 C 39 24, 43 28, 40 32 C 37 31, 34 29, 32 26 Z" fill="url(#gourmetGold)"/>
+  <path d="M 32 32 C 24 31, 20 35, 23 39 C 26 38, 29 35, 32 32 Z" fill="url(#gourmetGold)"/>
+  <path d="M 32 32 C 40 31, 44 35, 41 39 C 38 38, 35 35, 32 32 Z" fill="url(#gourmetGold)"/>
+  <path d="M 20 42 C 26 40, 38 40, 44 42 C 46 44, 44 46, 42 46 L 22 46 C 20 46, 18 44, 20 42 Z" fill="url(#gourmetGold)"/>
+  <polygon points="32,9 33.5,13 37.5,13 34.2,15.5 35.5,19.5 32,17 28.5,19.5 29.8,15.5 26.5,13 30.5,13" fill="url(#gourmetGold)"/>
+</svg>

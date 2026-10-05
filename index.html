@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gourmet Recipe & Culinary Studio | Artisan Bakery & Patisserie</title>
+  <meta name="description" content="Where artisan baking becomes an experience. Explore professional pastry recipes, culinary masterclasses, and curated baking collections.">
+  <meta property="og:title" content="Gourmet Recipe & Culinary Studio | Artisan Bakery & Patisserie">
+  <meta property="og:description" content="Artisan baking recipes, culinary education, and luxury patisserie techniques.">
+
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR HEADER -->
+  <header class="gourmet-header">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-symbol"><img src="assets/images/logo.svg" alt="Gourmet Studio emblem"></div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">GOURMET</span>
+          <span class="brand-sub">RECIPE & CULINARY STUDIO</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="desktop-nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Desktop Right Actions -->
+      <div class="header-right-actions">
+        <a href="recipes.html" class="text-white me-2" aria-label="Search Recipes"><i class="bi bi-search fs-5"></i></a>
+        <a href="login.html" class="btn-gourmet-outline py-2 px-3">Login</a>
+        <a href="recipes.html" class="btn-gourmet-primary py-2 px-4">Explore Recipes</a>
+      </div>
+
+      <!-- Mobile Hamburger Button (< 992px) -->
+      <button class="mobile-hamburger" aria-label="Toggle Navigation Menu">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY (< 992px) -->
+  <div class="mobile-menu-overlay">
+    <button class="mobile-menu-close" aria-label="Close Navigation Menu">
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <div class="brand-logo mb-4">
+      <div class="brand-symbol"><img src="assets/images/logo.svg" alt="Gourmet Studio emblem"></div>
+      <div class="brand-text-wrap">
+        <span class="brand-name">GOURMET</span>
+        <span class="brand-sub">RECIPE & CULINARY STUDIO</span>
+      </div>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+    <div class="mobile-actions-wrap">
+      <a href="recipes.html" class="btn-gourmet-primary">Explore Recipes</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- SECTION 01: EDITORIAL SPLIT HERO (CONTENT LEFT, IMAGE RIGHT) -->
+    <section class="split-hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- LEFT COLUMN: CONTENT -->
+          <div class="col-lg-6 hero-content text-start">
+            
+            <!-- Eyebrow Pill Badge -->
+            <div class="hero-eyebrow-badge mb-3">
+              <span class="eyebrow-dot"></span>
+              <span class="eyebrow-text">GOURMET RECIPE & CULINARY STUDIO</span>
+            </div>
+
+            <!-- Headline with Bloom & Gold Shimmer Animation -->
+            <h1 class="display-3 fw-normal text-white mb-3 hero-title text-start hero-bloom-headline">
+              <span class="bloom-line line-1">Crafted Slowly.</span>
+              <br>
+              <span class="bloom-line line-2 fst-italic font-accent gold-shimmer-line">Baked Beautifully. <span class="sparkle-icon" aria-hidden="true">✦</span></span>
+            </h1>
+
+            <!-- Subtitle Paragraph -->
+            <p class="lead mb-4 hero-subtitle text-start ms-0 hero-subtitle-animated">
+              <span class="sub-line line-1">Step into a world of refined artisan baking,</span>
+              <span class="sub-line line-2">classic pastry techniques, and masterclass recipe development</span>
+              <span class="sub-line line-3">created for dedicated culinary enthusiasts.</span>
+            </p>
+
+            <!-- Unified Stats Card -->
+            <div class="hero-stats-card mb-4 ms-0 text-start">
+              <div class="hero-stat-item">
+                <strong class="stat-number" data-target="120" data-suffix="+">0+</strong>
+                <span class="stat-label">ARTISAN RECIPES</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="hero-stat-item">
+                <strong class="stat-number" data-target="100" data-suffix="%">0%</strong>
+                <span class="stat-label">TESTED FORMULAS</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="hero-stat-item">
+                <strong class="stat-number">PARIS</strong>
+                <span class="stat-label">MASTERCLASS STUDIO</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="hero-cta-group justify-content-start">
+              <a href="recipes.html" class="btn-gourmet-primary">
+                Explore Recipes <i class="bi bi-arrow-right me-1"></i>
+              </a>
+              <a href="studio.html" class="btn-gourmet-outline">
+                Enter the Studio
+              </a>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: FEATURED SHOWCASE IMAGE -->
+          <div class="col-lg-6">
+            <div class="hero-split-image-wrap">
+              <img src="assets/images/5.jpg" alt="Artisan bakery interior display with hanging lights and wood counter" class="hero-split-img">
+              <div class="hero-image-badge">
+                <i class="bi bi-award fs-3 text-accent-gold d-block mb-1"></i>
+                <span class="small fw-semibold text-white d-block">Paris Patisserie</span>
+                <span class="tiny text-muted">Masterclass Studio</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: FEATURED RECIPES -->
+    <section class="section-padding gourmet-bg-primary">
+      <div class="container">
+        <div class="section-header-center reveal-fade-up">
+          <span class="eyebrow">CURATED SELECTION</span>
+          <h2 class="section-title">Signature Artisan Recipes</h2>
+          <p class="section-description">Tested and perfected recipes crafted with precise pastry ratios, premium ingredients, and professional studio techniques.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/25.jpg" alt="French berry tart decorated with fresh berries and gold leaf">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="berry_tart" aria-label="Favorite recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">French Tarts</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Gold Leaf Berry Entremet Tart</a></h3>
+                <p class="card-text text-muted small mb-3">Crisp sweet shortcrust pastry filled with vanilla bean diplomat cream and fresh summer berries.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> 45 mins</span>
+                  <span><i class="bi bi-bar-chart me-1"></i> Intermediate</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold" aria-label="View Recipe"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/9.jpg" alt="Golden flaky croissant filled with pistachio cream and dusted with powdered sugar">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="pistachio_croissant" aria-label="Favorite recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Laminated Viennoiserie</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Pistachio Praline Croissant</a></h3>
+                <p class="card-text text-muted small mb-3">Butter-laminated viennoiserie dough folded 72 times and generously piped with Sicilian pistachio praline.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> 120 mins</span>
+                  <span><i class="bi bi-bar-chart me-1"></i> Master</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold" aria-label="View Recipe"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/12.jpg" alt="Financier tea cake with glazed topping">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="brown_butter_financier" aria-label="Favorite recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">French Petit Fours</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Brown Butter Financier</a></h3>
+                <p class="card-text text-muted small mb-3">Classic almond teacakes featuring caramelized noisette butter and organic Tahitian vanilla.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> 30 mins</span>
+                  <span><i class="bi bi-bar-chart me-1"></i> Easy</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold" aria-label="View Recipe"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/17.jpg" alt="Dark chocolate ganache layer cake">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="dark_choc_cake" aria-label="Favorite recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Chocolate Atelier</span>
+                <h3 class="card-title"><a href="recipe-detail.html">70% Valrhona Ganache Cake</a></h3>
+                <p class="card-text text-muted small mb-3">Rich single-origin dark chocolate cake layers moistened with espresso syrup and velvet ganache.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> 60 mins</span>
+                  <span><i class="bi bi-bar-chart me-1"></i> Intermediate</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold" aria-label="View Recipe"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/23.jpg" alt="Artisan berry cheesecake dessert">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="berry_cheesecake" aria-label="Favorite recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Entremets & Cakes</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Wild Berry Baked Cheesecake</a></h3>
+                <p class="card-text text-muted small mb-3">Slow-baked speculoos crust cheesecake topped with vibrant raspberry glaze and fresh mint.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> 90 mins</span>
+                  <span><i class="bi bi-bar-chart me-1"></i> Intermediate</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold" aria-label="View Recipe"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/27.jpg" alt="French eclairs topped with craquelin and chocolate">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="choux_eclair" aria-label="Favorite recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Choux Pastry</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Craquelin Choux Eclair</a></h3>
+                <p class="card-text text-muted small mb-3">Crisp choux buns with crunchy cocoa craquelin and silky dark chocolate creme patissiere.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> 75 mins</span>
+                  <span><i class="bi bi-bar-chart me-1"></i> Advanced</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold" aria-label="View Recipe"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: THE ART OF BAKING -->
+    <section class="section-padding" style="background-color: var(--gourmet-bg-secondary);">
+      <div class="container">
+        <div class="editorial-split">
+          <div class="editorial-img-frame reveal-fade-up">
+            <img src="assets/images/6.jpg" alt="Pastry chef carefully decorating delicate tartlets with fresh raspberries in studio kitchen">
+          </div>
+
+          <div class="reveal-fade-up">
+            <span class="eyebrow">OUR CULINARY PHILOSOPHY</span>
+            <h2 class="mb-4">The Art Behind Every Recipe</h2>
+            <p>Baking is where chemistry meets passion. In our studio, we believe that extraordinary pastries are not created by chance, but through meticulous attention to temperature, timing, and ingredient sourcing.</p>
+            
+            <ul class="numbered-feature-list">
+              <li class="numbered-feature-item">
+                <span class="feature-num">01</span>
+                <div class="feature-info">
+                  <h4>Ingredient Integrity</h4>
+                  <p class="small text-muted mb-0">We use AOP Normandy butter, high-fat single-origin chocolate, and stone-ground organic flours.</p>
+                </div>
+              </li>
+              <li class="numbered-feature-item">
+                <span class="feature-num">02</span>
+                <div class="feature-info">
+                  <h4>Lamination Precision</h4>
+                  <p class="small text-muted mb-0">Engineered dough folds calibrated precisely to achieve hundreds of micro-butter layers.</p>
+                </div>
+              </li>
+              <li class="numbered-feature-item">
+                <span class="feature-num">03</span>
+                <div class="feature-info">
+                  <h4>Controlled Fermentation</h4>
+                  <p class="small text-muted mb-0">Slow cold-fermentation unlocks complex aromas and light digestible textures.</p>
+                </div>
+              </li>
+              <li class="numbered-feature-item">
+                <span class="feature-num">04</span>
+                <div class="feature-info">
+                  <h4>Artisanal Finishing</h4>
+                  <p class="small text-muted mb-0">Mirror glazes, delicate sugar work, and edible gold accents elevate every dessert into art.</p>
+                </div>
+              </li>
+            </ul>
+
+            <a href="about.html" class="btn-gourmet-outline mt-2">Read Our Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: SIGNATURE COLLECTIONS -->
+    <section class="section-padding gourmet-bg-primary">
+      <div class="container">
+        <div class="section-header-center reveal-fade-up">
+          <span class="eyebrow">EXPLORE ATELIERS</span>
+          <h2 class="section-title">Signature Collections</h2>
+          <p class="section-description">Browse curated collections categorized by pastry discipline, seasonal themes, and ingredient masterclasses.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap square">
+                <img src="assets/images/33.jpg" alt="Golden croissants surrounded by vanilla beans and baking ingredients on marble">
+              </div>
+              <div class="card-content text-center">
+                <span class="card-category">Viennoiserie</span>
+                <h3 class="card-title h4"><a href="collections.html">French Patisserie</a></h3>
+                <p class="small text-muted">Croissants, brioches, and classic butter-laminated pastry recipes.</p>
+                <a href="collections.html" class="btn-gourmet-outline py-2 px-3 mt-2">View Collection</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap square">
+                <img src="assets/images/31.jpg" alt="Dark chocolate bars, eggs, flour, and baking equipment on dark counter">
+              </div>
+              <div class="card-content text-center">
+                <span class="card-category">Cacao Masterclass</span>
+                <h3 class="card-title h4"><a href="collections.html">Chocolate Atelier</a></h3>
+                <p class="small text-muted">Rich ganaches, dark chocolate entremets, and pralines.</p>
+                <a href="collections.html" class="btn-gourmet-outline py-2 px-3 mt-2">View Collection</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap square">
+                <img src="assets/images/44.jpg" alt="Luxury gift pastry box filled with artisan tarts and mini cakes">
+              </div>
+              <div class="card-content text-center">
+                <span class="card-category">Artisan Giftings</span>
+                <h3 class="card-title h4"><a href="collections.html">Boutique Bakery</a></h3>
+                <p class="small text-muted">Curated dessert boxes, petit fours, and celebration baked goods.</p>
+                <a href="collections.html" class="btn-gourmet-outline py-2 px-3 mt-2">View Collection</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap square">
+                <img src="assets/images/53.jpg" alt="Seasonal fruit tartlet dessert with berries">
+              </div>
+              <div class="card-content text-center">
+                <span class="card-category">Harvest Flavors</span>
+                <h3 class="card-title h4"><a href="collections.html">Seasonal Desserts</a></h3>
+                <p class="small text-muted">Fresh berry tarts, citrus entremets, and autumn spice pastries.</p>
+                <a href="collections.html" class="btn-gourmet-outline py-2 px-3 mt-2">View Collection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: FROM STUDIO TO TABLE (4-IMAGE VISUAL STORY) -->
+    <section class="section-padding" style="background-color: var(--gourmet-bg-secondary);">
+      <div class="container">
+        <div class="section-header-center reveal-fade-up">
+          <span class="eyebrow">CRAFT STORY</span>
+          <h2 class="section-title">From Studio to Table</h2>
+          <p class="section-description">A visual journey through our four-stage culinary creation process.</p>
+        </div>
+
+        <div class="story-image-grid reveal-fade-up">
+          <div class="story-card">
+            <div class="story-card-img">
+              <img src="assets/images/26.jpg" alt="Sifting high-grade flour and organic baking ingredients">
+            </div>
+            <span class="eyebrow fs-6">01. Ingredient Selection</span>
+            <h4 class="h5 mt-1 mb-2">Pure Raw Materials</h4>
+            <p class="small text-muted mb-0">We source unbleached flours, organic eggs, and high-fat butter.</p>
+          </div>
+
+          <div class="story-card">
+            <div class="story-card-img">
+              <img src="assets/images/32.jpg" alt="Dough lamination and rolling on studio marble counter">
+            </div>
+            <span class="eyebrow fs-6">02. Preparation</span>
+            <h4 class="h5 mt-1 mb-2">Precision Folding</h4>
+            <p class="small text-muted mb-0">Temperature-controlled dough resting and lamination turns.</p>
+          </div>
+
+          <div class="story-card">
+            <div class="story-card-img">
+              <img src="assets/images/42.jpg" alt="Baking croissants in deck oven at optimal heat">
+            </div>
+            <span class="eyebrow fs-6">03. Baking</span>
+            <h4 class="h5 mt-1 mb-2">Steam & Bake</h4>
+            <p class="small text-muted mb-0">Baking at exact thermal profiles for golden crisp crusts.</p>
+          </div>
+
+          <div class="story-card">
+            <div class="story-card-img">
+              <img src="assets/images/49.jpg" alt="Piping mousse and garnishing dessert with fruit glazes">
+            </div>
+            <span class="eyebrow fs-6">04. Finishing</span>
+            <h4 class="h5 mt-1 mb-2">Artistic Presentation</h4>
+            <p class="small text-muted mb-0">Glaze application and micro-herb embellishments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: MEET THE CULINARY STUDIO -->
+    <section class="section-padding gourmet-bg-primary">
+      <div class="container">
+        <div class="editorial-split">
+          <div class="reveal-fade-up">
+            <span class="eyebrow">THE MASTERKITCHEN</span>
+            <h2 class="mb-4">A Kitchen Built Around Craft</h2>
+            <p>Our studio is more than just a kitchen—it is a research center for pastry innovation. Founded by passionate pastry chefs, we train culinary arts students, develop original dessert recipes, and host professional masterclasses.</p>
+            <p>From mastering delicate macarons to sourdough starter chemistry, we break down complex baking techniques into clear, step-by-step masterclasses.</p>
+            
+            <div class="d-flex gap-4 my-4">
+              <div>
+                <h3 class="display-6 font-heading text-accent-gold mb-0">120+</h3>
+                <span class="small text-muted">Tested Recipes</span>
+              </div>
+              <div>
+                <h3 class="display-6 font-heading text-accent-gold mb-0">15k+</h3>
+                <span class="small text-muted">Baking Students</span>
+              </div>
+              <div>
+                <h3 class="display-6 font-heading text-accent-gold mb-0">100%</h3>
+                <span class="small text-muted">Artisan Quality</span>
+              </div>
+            </div>
+
+            <a href="studio.html" class="btn-gourmet-primary">Discover the Studio</a>
+          </div>
+
+          <div class="editorial-img-frame reveal-fade-up">
+            <img src="assets/images/4.jpg" alt="Chef piping delicate cream onto pastry in professional kitchen">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07: LATEST RECIPE JOURNAL -->
+    <section class="section-padding" style="background-color: var(--gourmet-bg-secondary);">
+      <div class="container">
+        <div class="section-header-center reveal-fade-up">
+          <span class="eyebrow">RECIPE JOURNAL</span>
+          <h2 class="section-title">Culinary Articles & Techniques</h2>
+          <p class="section-description">Deep dives into the science of baking, ingredient guides, and chef notes.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/10.jpg" alt="Butter block and flour on wooden baking table">
+              </div>
+              <div class="card-content">
+                <span class="card-category">Pastry Science</span>
+                <h3 class="card-title h4"><a href="recipes.html">Why Butter Temperature Changes Pastry</a></h3>
+                <p class="small text-muted">How 1°C difference in butter plasticity alters croissant lamination layers.</p>
+                <div class="card-meta">
+                  <span>Oct 2026</span>
+                  <span>5 min read</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/11.jpg" alt="Melting chocolate ganache in glass bowl">
+              </div>
+              <div class="card-content">
+                <span class="card-category">Chocolate Techniques</span>
+                <h3 class="card-title h4"><a href="recipes.html">Building Perfect Chocolate Ganache</a></h3>
+                <p class="small text-muted">Emulsification ratios, water content, and temperature curves for glossy finishes.</p>
+                <div class="card-meta">
+                  <span>Sep 2026</span>
+                  <span>7 min read</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/14.jpg" alt="Bread dough proofing in bowl">
+              </div>
+              <div class="card-content">
+                <span class="card-category">Fermentation</span>
+                <h3 class="card-title h4"><a href="recipes.html">The Quiet Science of Fermentation</a></h3>
+                <p class="small text-muted">Understanding wild yeast strain behavior, acidity balance, and crumb structure.</p>
+                <div class="card-meta">
+                  <span>Sep 2026</span>
+                  <span>6 min read</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 08: NEWSLETTER CTA -->
+    <section class="section-padding position-relative overflow-hidden" style="background-color: var(--bg-surface);">
+      <div class="container position-relative" style="z-index: 2;">
+        <div class="row justify-content: center text-center">
+          <div class="col-lg-8 mx-auto reveal-fade-up">
+            <span class="eyebrow">JOIN THE JOURNAL</span>
+            <h2 class="display-5 mb-3">Bring the Studio Into Your Kitchen.</h2>
+            <p class="lead text-muted mb-4">Subscribe to receive monthly chef recipes, lamination tips, and exclusive studio masterclass invites directly to your inbox.</p>
+            
+            <form class="gourmet-newsletter-form d-flex gap-2 max-width-600 mx-auto flex-column flex-sm-row">
+              <input type="email" class="form-control-gourmet py-3 px-4 flex-grow-1" placeholder="Enter your email address..." required aria-label="Email address for newsletter">
+              <button type="submit" class="btn-gourmet-primary py-3 px-4 whitespace-nowrap">Join Journal</button>
+            </form>
+            <p class="small text-muted mt-3 mb-0"><i class="bi bi-shield-check me-1"></i> We respect your privacy. Unsubscribe anytime with one click.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="gourmet-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-logo">
+            <div class="brand-symbol"><img src="assets/images/logo.svg" alt="Gourmet Studio emblem"></div>
+            <div class="brand-text-wrap">
+              <span class="brand-name">GOURMET</span>
+              <span class="brand-sub">RECIPE & CULINARY STUDIO</span>
+            </div>
+          </a>
+          <p class="small text-muted pe-lg-4">Dedicated to the fine art of artisan baking, pastry craft, and culinary education. Where recipes are created with heart and precision.</p>
+          <div class="social-links mt-3">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="h6 text-white mb-3">Navigation</h5>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="h6 text-white mb-3">Collections</h5>
+          <ul class="footer-nav">
+            <li><a href="collections.html">French Patisserie</a></li>
+            <li><a href="collections.html">Chocolate Atelier</a></li>
+            <li><a href="collections.html">Artisan Breads</a></li>
+            <li><a href="collections.html">Tarts & Entremets</a></li>
+            <li><a href="collections.html">Seasonal Desserts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h5 class="h6 text-white mb-3">Studio Dispatch</h5>
+          <p class="small text-muted">Get weekly recipe techniques delivered to your inbox.</p>
+          <form class="gourmet-newsletter-form d-flex gap-2">
+            <input type="email" class="form-control-gourmet py-2" placeholder="Your email..." required aria-label="Footer newsletter email">
+            <button type="submit" class="btn-gourmet-primary py-2 px-3">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Gourmet Recipe & Culinary Studio. All rights reserved. Artisan Culinary Excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

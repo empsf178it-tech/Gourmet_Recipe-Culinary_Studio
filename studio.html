@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inside the Culinary Studio | Gourmet Recipe Studio</title>
+  <meta name="description" content="Explore our pastry masterclasses, hands-on culinary workshops, and studio workflow. Learn professional baking techniques directly from master pastry chefs.">
+
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR HEADER -->
+  <header class="gourmet-header">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-symbol"><img src="assets/images/logo.svg" alt="Gourmet Studio emblem"></div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">GOURMET</span>
+          <span class="brand-sub">RECIPE & CULINARY STUDIO</span>
+        </div>
+      </a>
+
+      <ul class="desktop-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="studio.html" class="active">Studio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="header-right-actions">
+        <a href="recipes.html" class="text-white me-2" aria-label="Search Recipes"><i class="bi bi-search fs-5"></i></a>
+        <a href="login.html" class="btn-gourmet-outline py-2 px-3">Login</a>
+        <a href="recipes.html" class="btn-gourmet-primary py-2 px-4">Explore Recipes</a>
+      </div>
+
+      <button class="mobile-hamburger" aria-label="Toggle Navigation Menu">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY (< 992px) -->
+  <div class="mobile-menu-overlay">
+    <button class="mobile-menu-close" aria-label="Close Navigation Menu">
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <div class="brand-logo mb-4">
+      <div class="brand-symbol"><img src="assets/images/logo.svg" alt="Gourmet Studio emblem"></div>
+      <div class="brand-text-wrap">
+        <span class="brand-name">GOURMET</span>
+        <span class="brand-sub">RECIPE & CULINARY STUDIO</span>
+      </div>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="studio.html" class="active">Studio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+    <div class="mobile-actions-wrap">
+      <a href="recipes.html" class="btn-gourmet-primary">Explore Recipes</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- STUDIO HERO -->
+    <section class="page-banner-hero">
+      <div class="page-banner-bg">
+        <img src="assets/images/1.jpg" alt="Inside Gourmet Culinary Studio kitchen with chefs working">
+      </div>
+      <div class="container page-banner-content">
+        <span class="eyebrow">CULINARY EDUCATION</span>
+        <h1 class="display-4 mb-3">Inside the Culinary Studio</h1>
+        <p class="lead text-muted">A dedicated research and teaching facility built to elevate home bakers and culinary professionals.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 01-04: THE FOUR PILLARS -->
+    <section class="section-padding gourmet-bg-primary">
+      <div class="container">
+        <div class="section-header-center reveal-fade-up">
+          <span class="eyebrow">METHODOLOGY</span>
+          <h2 class="section-title">The Four Pillars of Studio Training</h2>
+          <p class="section-description">Our step-by-step framework takes you from fundamental food science to signature artistic creation.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- 01 Learn -->
+          <div class="col-md-6 col-lg-3 reveal-fade-up">
+            <div class="gourmet-card p-4">
+              <span class="display-5 font-heading text-accent-gold mb-3 d-block">01</span>
+              <h3 class="h4 text-white">Learn</h3>
+              <p class="small text-muted mb-0">Master ingredient mechanics, flour hydration formulas, butter fat percentages, and thermal baking science.</p>
+            </div>
+          </div>
+
+          <!-- 02 Practice -->
+          <div class="col-md-6 col-lg-3 reveal-fade-up">
+            <div class="gourmet-card p-4">
+              <span class="display-5 font-heading text-accent-gold mb-3 d-block">02</span>
+              <h3 class="h4 text-white">Practice</h3>
+              <p class="small text-muted mb-0">Develop muscle memory through hands-on dough folding, piping, temperature control, and oven deck management.</p>
+            </div>
+          </div>
+
+          <!-- 03 Refine -->
+          <div class="col-md-6 col-lg-3 reveal-fade-up">
+            <div class="gourmet-card p-4">
+              <span class="display-5 font-heading text-accent-gold mb-3 d-block">03</span>
+              <h3 class="h4 text-white">Refine</h3>
+              <p class="small text-muted mb-0">Perfect delicate finishes: mirror glazes, chocolate tempering, choux craquelin crunch, and gold leaf placement.</p>
+            </div>
+          </div>
+
+          <!-- 04 Create -->
+          <div class="col-md-6 col-lg-3 reveal-fade-up">
+            <div class="gourmet-card p-4">
+              <span class="display-5 font-heading text-accent-gold mb-3 d-block">04</span>
+              <h3 class="h4 text-white">Create</h3>
+              <p class="small text-muted mb-0">Synthesize your skills to formulate original flavor profiles, seasonal tarts, and original dessert showpieces.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDIO WORKFLOW TIMELINE -->
+    <section class="section-padding" style="background-color: var(--gourmet-bg-secondary);">
+      <div class="container">
+        <div class="section-header-center reveal-fade-up">
+          <span class="eyebrow">STUDIO PROCESS</span>
+          <h2 class="section-title">The Masterclass Workflow</h2>
+          <p class="section-description">A visual timeline of how every dish evolves from raw concept to studio perfection.</p>
+        </div>
+
+        <div class="workflow-flex reveal-fade-up">
+          <div class="workflow-node">
+            <i class="bi bi-journal-check fs-2 text-accent-gold d-block mb-2"></i>
+            <h4 class="h6 text-white mb-0">Select</h4>
+            <span class="small text-muted">Formula</span>
+          </div>
+          <div class="workflow-arrow"><i class="bi bi-arrow-right"></i></div>
+
+          <div class="workflow-node">
+            <i class="bi bi-box-seam fs-2 text-accent-gold d-block mb-2"></i>
+            <h4 class="h6 text-white mb-0">Prepare</h4>
+            <span class="small text-muted">Mise en place</span>
+          </div>
+          <div class="workflow-arrow"><i class="bi bi-arrow-right"></i></div>
+
+          <div class="workflow-node">
+            <i class="bi bi-fire fs-2 text-accent-gold d-block mb-2"></i>
+            <h4 class="h6 text-white mb-0">Bake</h4>
+            <span class="small text-muted">Thermal bake</span>
+          </div>
+          <div class="workflow-arrow"><i class="bi bi-arrow-right"></i></div>
+
+          <div class="workflow-node">
+            <i class="bi bi-magic fs-2 text-accent-gold d-block mb-2"></i>
+            <h4 class="h6 text-white mb-0">Finish</h4>
+            <span class="small text-muted">Garnish</span>
+          </div>
+          <div class="workflow-arrow"><i class="bi bi-arrow-right"></i></div>
+
+          <div class="workflow-node">
+            <i class="bi bi-cup-hot fs-2 text-accent-gold d-block mb-2"></i>
+            <h4 class="h6 text-white mb-0">Taste</h4>
+            <span class="small text-muted">Evaluation</span>
+          </div>
+          <div class="workflow-arrow"><i class="bi bi-arrow-right"></i></div>
+
+          <div class="workflow-node">
+            <i class="bi bi-award fs-2 text-accent-gold d-block mb-2"></i>
+            <h4 class="h6 text-white mb-0">Refine</h4>
+            <span class="small text-muted">Mastery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERCLASS CARDS WITH MODALS -->
+    <section class="section-padding gourmet-bg-primary">
+      <div class="container">
+        <div class="section-header-center reveal-fade-up">
+          <span class="eyebrow">UPCOMING WORKSHOPS</span>
+          <h2 class="section-title">Studio Masterclasses</h2>
+          <p class="section-description">Interactive, hands-on masterclass sessions led by our senior executive pastry chefs.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Workshop 1 -->
+          <div class="col-md-6 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/3.jpg" alt="Artisan croissant baking workshop kitchen setup">
+              </div>
+              <div class="card-content">
+                <span class="card-category">3-Day Intensive</span>
+                <h3 class="card-title">Artisan Croissant & Viennoiserie Workshop</h3>
+                <p class="small text-muted mb-3">Master butter lamination, dough temperature control, shaping techniques, and proofing humidity.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="text-accent-gold fw-semibold">$450 / Student</span>
+                  <button class="btn-gourmet-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#masterclassModal1">View Masterclass</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Workshop 2 -->
+          <div class="col-md-6 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/51.jpg" alt="Pastry chef tempering and piping chocolate pralines">
+              </div>
+              <div class="card-content">
+                <span class="card-category">2-Day Masterclass</span>
+                <h3 class="card-title">Chocolate Tempering & Praline Atelier</h3>
+                <p class="small text-muted mb-3">Learn seeding tempering methods, polycarbonate mold polishing, ganache piping, and velvet spraying.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="text-accent-gold fw-semibold">$380 / Student</span>
+                  <button class="btn-gourmet-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#masterclassModal2">View Masterclass</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Workshop 3 -->
+          <div class="col-md-6 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/15.jpg" alt="Pastry chef decorating gourmet tartlets in studio">
+              </div>
+              <div class="card-content">
+                <span class="card-category">1-Day Intensive</span>
+                <h3 class="card-title">Modern French Tart & Entremet Techniques</h3>
+                <p class="small text-muted mb-3">Master perforated tart rings, sablé lining, diplomat creams, and edible gold leaf finishing.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="text-accent-gold fw-semibold">$275 / Student</span>
+                  <button class="btn-gourmet-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#masterclassModal3">View Masterclass</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Workshop 4 -->
+          <div class="col-md-6 reveal-fade-up">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/13.jpg" alt="Pastry chef in modern stainless steel studio test kitchen">
+              </div>
+              <div class="card-content">
+                <span class="card-category">Weekend Bootcamp</span>
+                <h3 class="card-title">Celebration Cake Architecture & Piping</h3>
+                <p class="small text-muted mb-3">Construct multi-tiered cakes, velvet buttercream smoothing, and intricate piping techniques.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="text-accent-gold fw-semibold">$320 / Student</span>
+                  <button class="btn-gourmet-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#masterclassModal4">View Masterclass</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL 1: CROISSANT WORKSHOP -->
+    <div class="modal fade" id="masterclassModal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-content-gourmet">
+          <div class="modal-header">
+            <h4 class="modal-title h5 text-white" id="modalLabel1">Artisan Croissant & Viennoiserie Workshop</h4>
+            <button type="button" class="btn-close btn-close-white-custom" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/images/3.jpg" class="rounded w-100 mb-4" alt="Croissant workshop">
+            <h5 class="text-accent-gold">Workshop Details & Schedule</h5>
+            <p>Join Chef Antoine Laurent in our state-of-the-art lamination lab. Over 3 intensive days, you will produce croissants, pain au chocolat, kouign-amann, and brioche feuilletee from scratch.</p>
+            <ul class="text-muted">
+              <li><strong>Duration:</strong> 3 Days (18 Total Hours)</li>
+              <li><strong>Included:</strong> Professional apron, recipe notebook, ingredients, and takeaway pastry box.</li>
+              <li><strong>Prerequisite:</strong> Basic baking knowledge recommended.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-gourmet-outline" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn-gourmet-primary">Reserve Your Spot</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 2: CHOCOLATE ATELIER -->
+    <div class="modal fade" id="masterclassModal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-content-gourmet">
+          <div class="modal-header">
+            <h4 class="modal-title h5 text-white" id="modalLabel2">Chocolate Tempering & Praline Atelier</h4>
+            <button type="button" class="btn-close btn-close-white-custom" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/images/51.jpg" class="rounded w-100 mb-4" alt="Chocolate masterclass">
+            <h5 class="text-accent-gold">Atelier Overview</h5>
+            <p>Master the science of cacao butter crystal structures (Form V) and craft glossy, snap-crisp molded bonbons filled with single-origin ganaches.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-gourmet-outline" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn-gourmet-primary">Reserve Your Spot</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 3 & 4 PLACEHOLDERS -->
+    <div class="modal fade" id="masterclassModal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-content-gourmet p-4 text-center">
+          <h4 class="text-white mb-3">Tart Masterclass Reserved</h4>
+          <p class="text-muted">Seats available for upcoming monthly sessions. Inquire with our admissions desk.</p>
+          <a href="contact.html" class="btn-gourmet-primary">Inquire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="masterclassModal4" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-content-gourmet p-4 text-center">
+          <h4 class="text-white mb-3">Cake Architecture Masterclass</h4>
+          <p class="text-muted">Master structural cake assembly and smooth buttercream piping in small group classes.</p>
+          <a href="contact.html" class="btn-gourmet-primary">Inquire Now</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="gourmet-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-logo">
+            <div class="brand-symbol"><img src="assets/images/logo.svg" alt="Gourmet Studio emblem"></div>
+            <div class="brand-text-wrap">
+              <span class="brand-name">GOURMET</span>
+              <span class="brand-sub">RECIPE & CULINARY STUDIO</span>
+            </div>
+          </a>
+          <p class="small text-muted pe-lg-4">Dedicated to the fine art of artisan baking, pastry craft, and culinary education. Where recipes are created with heart and precision.</p>
+          <div class="social-links mt-3">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="h6 text-white mb-3">Navigation</h5>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="h6 text-white mb-3">Collections</h5>
+          <ul class="footer-nav">
+            <li><a href="collections.html">French Patisserie</a></li>
+            <li><a href="collections.html">Chocolate Atelier</a></li>
+            <li><a href="collections.html">Artisan Breads</a></li>
+            <li><a href="collections.html">Tarts & Entremets</a></li>
+            <li><a href="collections.html">Seasonal Desserts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h5 class="h6 text-white mb-3">Studio Dispatch</h5>
+          <p class="small text-muted">Get weekly recipe techniques delivered to your inbox.</p>
+          <form class="gourmet-newsletter-form d-flex gap-2">
+            <input type="email" class="form-control-gourmet py-2" placeholder="Your email..." required aria-label="Footer newsletter email">
+            <button type="submit" class="btn-gourmet-primary py-2 px-3">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Gourmet Recipe & Culinary Studio. All rights reserved. Artisan Culinary Excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

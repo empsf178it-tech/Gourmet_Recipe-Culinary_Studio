@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes Worth Baking | Gourmet Recipe & Culinary Studio</title>
+  <meta name="description" content="Discover artisan pastry recipes, french tarts, laminated viennoiserie, sourdough breads, and chocolate masterclasses.">
+
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR HEADER -->
+  <header class="gourmet-header">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-symbol"><img src="assets/images/logo.svg" alt="Gourmet Studio emblem"></div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">GOURMET</span>
+          <span class="brand-sub">RECIPE & CULINARY STUDIO</span>
+        </div>
+      </a>
+
+      <ul class="desktop-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="header-right-actions">
+        <a href="recipes.html" class="text-white me-2" aria-label="Search Recipes"><i class="bi bi-search fs-5"></i></a>
+        <a href="login.html" class="btn-gourmet-outline py-2 px-3">Login</a>
+        <a href="recipes.html" class="btn-gourmet-primary py-2 px-4">Explore Recipes</a>
+      </div>
+
+      <button class="mobile-hamburger" aria-label="Toggle Navigation Menu">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY (< 992px) -->
+  <div class="mobile-menu-overlay">
+    <button class="mobile-menu-close" aria-label="Close Navigation Menu">
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <div class="brand-logo mb-4">
+      <div class="brand-symbol"><img src="assets/images/logo.svg" alt="Gourmet Studio emblem"></div>
+      <div class="brand-text-wrap">
+        <span class="brand-name">GOURMET</span>
+        <span class="brand-sub">RECIPE & CULINARY STUDIO</span>
+      </div>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html" class="active">Recipes</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+    <div class="mobile-actions-wrap">
+      <a href="recipes.html" class="btn-gourmet-primary">Explore Recipes</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE BANNER HERO -->
+    <section class="page-banner-hero">
+      <div class="page-banner-bg">
+        <img src="assets/images/37.jpg" alt="Artisan flour dusting on dark bakery surface">
+      </div>
+      <div class="container page-banner-content">
+        <span class="eyebrow">RECIPE ARCHIVE</span>
+        <h1 class="display-4 mb-3">Recipes Worth Baking</h1>
+        <p class="lead text-muted">Explore our studio collection of tested pastry, sourdough, chocolate, and entremet recipes.</p>
+      </div>
+    </section>
+
+    <!-- RECIPES EXPLORER SECTION -->
+    <section class="section-padding gourmet-bg-primary">
+      <div class="container">
+        
+        <!-- Live Search Bar -->
+        <div class="search-input-wrap">
+          <i class="bi bi-search search-icon"></i>
+          <input type="text" id="recipeSearchInput" placeholder="Search recipe name, ingredient, or technique..." aria-label="Search recipes">
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Recipes</button>
+          <button class="filter-btn" data-filter="cakes">Cakes</button>
+          <button class="filter-btn" data-filter="pastries">Pastries</button>
+          <button class="filter-btn" data-filter="bread">Bread</button>
+          <button class="filter-btn" data-filter="chocolate">Chocolate</button>
+          <button class="filter-btn" data-filter="tarts">Tarts</button>
+          <button class="filter-btn" data-filter="cookies">Cookies</button>
+          <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+        </div>
+
+        <!-- Recipe Grid (12 Cards) -->
+        <div class="row g-4" id="recipesGridContainer">
+          
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="tarts">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/16.jpg" alt="French strawberry and vanilla tartlet">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="strawberry_tart" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Tarts</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Strawberry Custard Tart</a></h3>
+                <p class="small text-muted mb-3">Crisp almond crust with classic vanilla bean pastry cream and glazed wild strawberries.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 30m | Bake: 25m</span>
+                  <span>Easy</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="cakes">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/18.jpg" alt="Caramel layered naked cake slice">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="caramel_naked_cake" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Cakes</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Salted Caramel Layer Cake</a></h3>
+                <p class="small text-muted mb-3">Moist sponge layers frosted with salted caramel buttercream and toasted pecans.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 45m | Bake: 35m</span>
+                  <span>Intermediate</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="pastries">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/20.jpg" alt="Almond pain au chocolat croissant fold">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="almond_pain_choc" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Pastries</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Almond Pain au Chocolat</a></h3>
+                <p class="small text-muted mb-3">Double-baked chocolate croissant soaked in orange blossom syrup and topped with frangipane.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 60m | Bake: 20m</span>
+                  <span>Advanced</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="cookies">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/21.jpg" alt="French macaron shell with salted caramel filling">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="caramel_macaron" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Cookies</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Salted Caramel Macarons</a></h3>
+                <p class="small text-muted mb-3">Italian meringue macaron shells filled with rich Fleur de Sel caramel ganache.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 40m | Bake: 15m</span>
+                  <span>Master</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="pastries">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/22.jpg" alt="Golden brioche feuilletee pastry spiral">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="brioche_feuilletee" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Pastries</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Brioche Feuilletee Spiral</a></h3>
+                <p class="small text-muted mb-3">Laminated rich brioche dough layered with pearl sugar and Tahitian vanilla bean glaze.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 90m | Bake: 30m</span>
+                  <span>Advanced</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="chocolate">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/24.jpg" alt="Dark chocolate truffle fondant with molten center">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="dark_choc_fondant" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Chocolate</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Molten Dark Chocolate Lava Cake</a></h3>
+                <p class="small text-muted mb-3">Warm 72% Venezuelan dark chocolate cake featuring a flowing liquid chocolate heart.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 15m | Bake: 12m</span>
+                  <span>Easy</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="pastries">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/28.jpg" alt="Cinnamon cardamon cardamom scroll bun">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="cardamom_scroll" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Pastries</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Nordic Cardamom Bun</a></h3>
+                <p class="small text-muted mb-3">Hand-knotted enriched brioche scented with freshly cracked green cardamom pods.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 50m | Bake: 20m</span>
+                  <span>Intermediate</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="bread">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/29.jpg" alt="Rustic country sourdough bread loaf with open crumb">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="country_sourdough" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Bread</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Country Sourdough Boule</a></h3>
+                <p class="small text-muted mb-3">High-hydration sourdough fermented for 24 hours with blistered blister crust and airy crumb.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 24h | Bake: 45m</span>
+                  <span>Advanced</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="cookies">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/30.jpg" alt="Pistachio and sea salt brown butter cookie">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="pistachio_cookie" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Cookies</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Pistachio Sea Salt Cookies</a></h3>
+                <p class="small text-muted mb-3">Chewy brown butter cookies loaded with roasted Sicilian pistachios and Maldon sea salt.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 20m | Bake: 12m</span>
+                  <span>Easy</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="cakes">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/34.jpg" alt="Mini lemon meringue cupcake with toasted meringue peak">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="lemon_meringue_cupcake" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Cakes</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Lemon Meringue Petit Fours</a></h3>
+                <p class="small text-muted mb-3">Tart Meyer lemon curd filled sponge cake topped with torched Swiss meringue caps.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 35m | Bake: 18m</span>
+                  <span>Intermediate</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 11 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="seasonal">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/35.jpg" alt="Blackberry vanilla bean panna cotta tart">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="blackberry_panna_cotta" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Seasonal</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Blackberry Panna Cotta Tart</a></h3>
+                <p class="small text-muted mb-3">Silky vanilla bean panna cotta layered inside sweet pastry shell with wild blackberry compote.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 40m | Chill: 3h</span>
+                  <span>Intermediate</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 12 -->
+          <div class="col-md-6 col-lg-4 recipe-filter-item" data-category="tarts">
+            <div class="gourmet-card">
+              <div class="card-img-wrap">
+                <img src="assets/images/36.jpg" alt="Fresh raspberry and dark chocolate ganache tartlet">
+                <button class="btn-favorite position-absolute top-0 end-0 m-3" data-id="raspberry_ganache_tart" aria-label="Save recipe"><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Tarts</span>
+                <h3 class="card-title"><a href="recipe-detail.html">Raspberry Dark Chocolate Tart</a></h3>
+                <p class="small text-muted mb-3">Cocoa sablé pastry filled with 66% dark chocolate ganache and arranged fresh raspberries.</p>
+                <div class="card-meta">
+                  <span><i class="bi bi-clock me-1"></i> Prep: 45m | Bake: 15m</span>
+                  <span>Intermediate</span>
+                  <a href="recipe-detail.html" class="ms-auto text-accent-gold"><i class="bi bi-arrow-right fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- No Results Fallback State -->
+        <div id="noResultsMessage" class="text-center py-5" style="display: none;">
+          <i class="bi bi-search display-3 text-muted mb-3"></i>
+          <h3 class="h4 text-white">No matching recipes found</h3>
+          <p class="text-muted">Try adjusting your search terms or filter selection.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="gourmet-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-logo">
+            <div class="brand-symbol"><img src="assets/images/logo.svg" alt="Gourmet Studio emblem"></div>
+            <div class="brand-text-wrap">
+              <span class="brand-name">GOURMET</span>
+              <span class="brand-sub">RECIPE & CULINARY STUDIO</span>
+            </div>
+          </a>
+          <p class="small text-muted pe-lg-4">Dedicated to the fine art of artisan baking, pastry craft, and culinary education. Where recipes are created with heart and precision.</p>
+          <div class="social-links mt-3">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="h6 text-white mb-3">Navigation</h5>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="h6 text-white mb-3">Collections</h5>
+          <ul class="footer-nav">
+            <li><a href="collections.html">French Patisserie</a></li>
+            <li><a href="collections.html">Chocolate Atelier</a></li>
+            <li><a href="collections.html">Artisan Breads</a></li>
+            <li><a href="collections.html">Tarts & Entremets</a></li>
+            <li><a href="collections.html">Seasonal Desserts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h5 class="h6 text-white mb-3">Studio Dispatch</h5>
+          <p class="small text-muted">Get weekly recipe techniques delivered to your inbox.</p>
+          <form class="gourmet-newsletter-form d-flex gap-2">
+            <input type="email" class="form-control-gourmet py-2" placeholder="Your email..." required aria-label="Footer newsletter email">
+            <button type="submit" class="btn-gourmet-primary py-2 px-3">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Gourmet Recipe & Culinary Studio. All rights reserved. Artisan Culinary Excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

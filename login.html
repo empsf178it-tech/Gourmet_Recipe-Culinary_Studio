@@ -85,6 +85,26 @@
           <p class="small text-muted mb-0">Sign in to your demo culinary account</p>
         </div>
 
+        <!-- Social Quick Login -->
+        <div class="auth-social-buttons mb-4">
+          <button type="button" class="btn-auth-social" aria-label="Sign in with Google" onclick="processLogin('google.user@gourmetstudio.com')">
+            <i class="bi bi-google"></i>
+            <span>Google</span>
+          </button>
+          <button type="button" class="btn-auth-social" aria-label="Sign in with Apple" onclick="processLogin('apple.user@gourmetstudio.com')">
+            <i class="bi bi-apple"></i>
+            <span>Apple</span>
+          </button>
+          <button type="button" class="btn-auth-social" aria-label="Sign in with Facebook" onclick="processLogin('facebook.user@gourmetstudio.com')">
+            <i class="bi bi-facebook"></i>
+            <span>Facebook</span>
+          </button>
+        </div>
+
+        <div class="auth-divider mb-4">
+          <span>OR SIGN IN WITH EMAIL</span>
+        </div>
+
         <form id="gourmetLoginForm">
           <div class="form-group">
             <label class="form-label" for="loginEmail">Email Address</label>
@@ -96,7 +116,12 @@
               <label class="form-label mb-0" for="loginPassword">Password</label>
               <a href="#" class="small text-accent-gold" onclick="alert('Demo reset link sent to email!'); return false;">Forgot Password?</a>
             </div>
-            <input type="password" id="loginPassword" class="form-control-gourmet" placeholder="••••••••" value="demo1234" required>
+            <div class="password-input-wrap">
+              <input type="password" id="loginPassword" class="form-control-gourmet" placeholder="••••••••" value="demo1234" required>
+              <button type="button" class="btn-toggle-password" data-target="loginPassword" aria-label="Toggle password visibility">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
           </div>
 
           <div class="form-check mb-4">

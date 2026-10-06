@@ -85,6 +85,26 @@
           <p class="small text-muted mb-0">Create your culinary student account</p>
         </div>
 
+        <!-- Social Quick Register -->
+        <div class="auth-social-buttons mb-4">
+          <button type="button" class="btn-auth-social" aria-label="Register with Google" onclick="processRegister('Google Member', 'google.user@gourmetstudio.com')">
+            <i class="bi bi-google"></i>
+            <span>Google</span>
+          </button>
+          <button type="button" class="btn-auth-social" aria-label="Register with Apple" onclick="processRegister('Apple Member', 'apple.user@gourmetstudio.com')">
+            <i class="bi bi-apple"></i>
+            <span>Apple</span>
+          </button>
+          <button type="button" class="btn-auth-social" aria-label="Register with Facebook" onclick="processRegister('Facebook Member', 'facebook.user@gourmetstudio.com')">
+            <i class="bi bi-facebook"></i>
+            <span>Facebook</span>
+          </button>
+        </div>
+
+        <div class="auth-divider mb-4">
+          <span>OR REGISTER WITH EMAIL</span>
+        </div>
+
         <form id="gourmetRegisterForm">
           <div class="form-group">
             <label class="form-label" for="regName">Full Name *</label>
@@ -98,7 +118,12 @@
 
           <div class="form-group">
             <label class="form-label" for="regPass">Password *</label>
-            <input type="password" id="regPass" class="form-control-gourmet" placeholder="At least 8 characters" required>
+            <div class="password-input-wrap">
+              <input type="password" id="regPass" class="form-control-gourmet" placeholder="At least 8 characters" required>
+              <button type="button" class="btn-toggle-password" data-target="regPass" aria-label="Toggle password visibility">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
             <!-- Password Strength Indicator -->
             <div class="mt-2">
               <div class="d-flex justify-content-between align-items-center small text-muted">
@@ -113,7 +138,12 @@
 
           <div class="form-group">
             <label class="form-label" for="regPassConfirm">Confirm Password *</label>
-            <input type="password" id="regPassConfirm" class="form-control-gourmet" placeholder="Repeat password" required>
+            <div class="password-input-wrap">
+              <input type="password" id="regPassConfirm" class="form-control-gourmet" placeholder="Repeat password" required>
+              <button type="button" class="btn-toggle-password" data-target="regPassConfirm" aria-label="Toggle password visibility">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
           </div>
 
           <div class="form-check mb-4">

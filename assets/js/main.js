@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initRecipeCompletion();
   initFormsValidation();
   initAuthSystem();
+  initPasswordToggle();
   initDashboardSystem();
   initBackToTop();
   initHeroLetterAnimation();
@@ -441,6 +442,26 @@ function createAuthModalDOM() {
         <p class="small text-muted mb-0" id="authModalSub">Access your culinary progress & saved recipes</p>
       </div>
 
+      <!-- Social Quick Login -->
+      <div class="auth-social-buttons mb-3">
+        <button type="button" class="btn-auth-social" aria-label="Continue with Google" onclick="processLogin('google.user@gourmetstudio.com')">
+          <i class="bi bi-google"></i>
+          <span>Google</span>
+        </button>
+        <button type="button" class="btn-auth-social" aria-label="Continue with Apple" onclick="processLogin('apple.user@gourmetstudio.com')">
+          <i class="bi bi-apple"></i>
+          <span>Apple</span>
+        </button>
+        <button type="button" class="btn-auth-social" aria-label="Continue with Facebook" onclick="processLogin('facebook.user@gourmetstudio.com')">
+          <i class="bi bi-facebook"></i>
+          <span>Facebook</span>
+        </button>
+      </div>
+
+      <div class="auth-divider mb-3">
+        <span>OR USE EMAIL</span>
+      </div>
+
       <div class="gourmet-auth-tabs d-flex mb-4">
         <button type="button" class="auth-tab-btn active" data-tab="login"><i class="bi bi-box-arrow-in-right me-1"></i> Sign In</button>
         <button type="button" class="auth-tab-btn" data-tab="register"><i class="bi bi-person-plus me-1"></i> Create Account</button>
@@ -457,7 +478,12 @@ function createAuthModalDOM() {
             <label class="form-label text-white small mb-0" for="modalLoginPassword">Password</label>
             <a href="#" class="small text-accent-gold text-decoration-none" onclick="alert('Demo password reset link sent!'); return false;">Forgot?</a>
           </div>
-          <input type="password" id="modalLoginPassword" class="form-control-gourmet" placeholder="••••••••" value="demo1234" required>
+          <div class="password-input-wrap">
+            <input type="password" id="modalLoginPassword" class="form-control-gourmet" placeholder="••••••••" value="demo1234" required>
+            <button type="button" class="btn-toggle-password" data-target="modalLoginPassword" aria-label="Toggle password visibility">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
         </div>
         <div class="form-check mb-4">
           <input class="form-check-input" type="checkbox" id="modalRememberMe" checked>
@@ -478,7 +504,12 @@ function createAuthModalDOM() {
         </div>
         <div class="form-group mb-3">
           <label class="form-label text-white small" for="modalRegPass">Password</label>
-          <input type="password" id="modalRegPass" class="form-control-gourmet" placeholder="At least 6 characters" required>
+          <div class="password-input-wrap">
+            <input type="password" id="modalRegPass" class="form-control-gourmet" placeholder="At least 6 characters" required>
+            <button type="button" class="btn-toggle-password" data-target="modalRegPass" aria-label="Toggle password visibility">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
         </div>
         <div class="form-group mb-3">
           <label class="form-label text-white small" for="modalRegSpecialty">Preferred Specialty</label>
@@ -594,6 +625,43 @@ function switchAuthModalTab(tab) {
       sub.textContent = 'Create your account to unlock artisan features';
     }
   }
+}
+
+/* --------------------------------------------------------------------------
+   08B. PASSWORD VISIBILITY TOGGLE (EYE ICON)
+   -------------------------------------------------------------------------- */
+function initPasswordToggle() {
+  document.addEventListener('click', (e) => {
+    const toggleBtn = e.target.closest('.btn-toggle-password');
+    if (!toggleBtn) return;
+
+    e.preventDefault();
+    const targetId = toggleBtn.getAttribute('data-target');
+    let input = targetId ? document.getElementById(targetId) : null;
+    
+    if (!input) {
+      const parentWrap = toggleBtn.closest('.password-input-wrap');
+      if (parentWrap) {
+        input = parentWrap.querySelector('input');
+      }
+    }
+
+    if (input) {
+      const isPassword = input.type === 'password';
+      input.type = isPassword ? 'text' : 'password';
+
+      const icon = toggleBtn.querySelector('i');
+      if (icon) {
+        if (isPassword) {
+          icon.classList.remove('bi-eye');
+          icon.classList.add('bi-eye-slash');
+        } else {
+          icon.classList.remove('bi-eye-slash');
+          icon.classList.add('bi-eye');
+        }
+      }
+    }
+  });
 }
 
 /* --------------------------------------------------------------------------

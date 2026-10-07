@@ -444,15 +444,15 @@ function createAuthModalDOM() {
 
       <!-- Social Quick Login -->
       <div class="auth-social-buttons mb-3">
-        <button type="button" class="btn-auth-social" aria-label="Continue with Google" onclick="processLogin('google.user@gourmetstudio.com')">
+        <button type="button" class="btn-auth-social btn-auth-google" aria-label="Continue with Google" onclick="processLogin('google.user@gourmetstudio.com')">
           <i class="bi bi-google"></i>
           <span>Google</span>
         </button>
-        <button type="button" class="btn-auth-social" aria-label="Continue with Apple" onclick="processLogin('apple.user@gourmetstudio.com')">
+        <button type="button" class="btn-auth-social btn-auth-apple" aria-label="Continue with Apple" onclick="processLogin('apple.user@gourmetstudio.com')">
           <i class="bi bi-apple"></i>
           <span>Apple</span>
         </button>
-        <button type="button" class="btn-auth-social" aria-label="Continue with Facebook" onclick="processLogin('facebook.user@gourmetstudio.com')">
+        <button type="button" class="btn-auth-social btn-auth-facebook" aria-label="Continue with Facebook" onclick="processLogin('facebook.user@gourmetstudio.com')">
           <i class="bi bi-facebook"></i>
           <span>Facebook</span>
         </button>
